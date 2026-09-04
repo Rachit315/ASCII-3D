@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="facet-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffff" />
+      <stop offset="100%" stop-color="#0077ff" />
+    </linearGradient>
+    <linearGradient id="facet-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#00ffff" />
+    </linearGradient>
+    <linearGradient id="facet-3" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bf00ff" />
+      <stop offset="100%" stop-color="#002699" />
+    </linearGradient>
+    <linearGradient id="facet-center" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80ffff" />
+      <stop offset="100%" stop-color="#2a0066" />
+    </linearGradient>
+  </defs>
+
+  <!-- Crown Upper -->
+  <polygon points="140,150 250,70 360,150 250,170" fill="url(#facet-2)" />
+  <polygon points="70,190 140,150 250,170 160,220" fill="url(#facet-1)" />
+  <polygon points="430,190 360,150 250,170 340,220" fill="url(#facet-3)" />
+
+  <!-- Crown Side Wings -->
+  <polygon points="70,190 140,150 250,70 70,190" fill="#00bbd4" />
+  <polygon points="430,190 360,150 250,70 430,190" fill="#7928ca" />
+
+  <!-- Pavilion Center -->
+  <polygon points="160,220 250,170 340,220 250,440" fill="url(#facet-center)" />
+
+  <!-- Pavilion Left & Right -->
+  <polygon points="70,190 160,220 250,440 70,190" fill="url(#facet-1)" />
+  <polygon points="430,190 340,220 250,440 430,190" fill="url(#facet-3)" />
+
+  <!-- Highlights -->
+  <circle cx="250" cy="170" r="12" fill="#ffffff" />
+  <polygon points="250,110 256,125 270,130 256,135 250,150 244,135 230,130 244,125" fill="#ffffff" />
+</svg>

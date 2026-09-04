@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="invader-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#39ff14" />
+      <stop offset="100%" stop-color="#00aa22" />
+    </linearGradient>
+  </defs>
+
+  <g fill="url(#invader-grad)">
+    <!-- Row 1: Antenna tips -->
+    <rect x="140" y="80" width="40" height="40" rx="4" />
+    <rect x="320" y="80" width="40" height="40" rx="4" />
+
+    <!-- Row 2: Antenna shafts -->
+    <rect x="180" y="120" width="40" height="40" rx="4" />
+    <rect x="280" y="120" width="40" height="40" rx="4" />
+
+    <!-- Row 3: Head bar -->
+    <rect x="140" y="160" width="220" height="40" rx="4" />
+
+    <!-- Row 4: Eye level -->
+    <rect x="100" y="200" width="80" height="40" rx="4" />
+    <rect x="220" y="200" width="60" height="40" rx="4" />
+    <rect x="320" y="200" width="80" height="40" rx="4" />
+
+    <!-- Row 5: Full chest width -->
+    <rect x="60" y="240" width="380" height="40" rx="4" />
+
+    <!-- Row 6: Sides + mouth center -->
+    <rect x="60" y="280" width="40" height="40" rx="4" />
+    <rect x="140" y="280" width="220" height="40" rx="4" />
+    <rect x="400" y="280" width="40" height="40" rx="4" />
+
+    <!-- Row 7: Legs outer -->
+    <rect x="60" y="320" width="40" height="40" rx="4" />
+    <rect x="140" y="320" width="40" height="40" rx="4" />
+    <rect x="320" y="320" width="40" height="40" rx="4" />
+    <rect x="400" y="320" width="40" height="40" rx="4" />
+
+    <!-- Row 8: Feet -->
+    <rect x="100" y="360" width="80" height="40" rx="4" />
+    <rect x="320" y="360" width="80" height="40" rx="4" />
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="cyber-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#ff007f" />
+    </linearGradient>
+    <linearGradient id="eye-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#ff9900" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Head Shell -->
+  <path d="M 250 40 C 140 40 80 120 80 230 C 80 290 120 340 160 370 L 160 430 C 160 450 190 460 250 460 C 310 460 340 450 340 430 L 340 370 C 380 340 420 290 420 230 C 420 120 360 40 250 40 Z" fill="url(#cyber-grad)" />
+
+  <!-- Forehead Cyber Insets -->
+  <polygon points="250,70 230,130 270,130" fill="#0b0b14" />
+  <polygon points="200,90 160,140 210,140" fill="#0b0b14" />
+  <polygon points="300,90 290,140 340,140" fill="#0b0b14" />
+
+  <!-- Eye Sockets -->
+  <polygon points="140,210 215,225 200,295 130,265" fill="#0b0b14" />
+  <polygon points="360,210 285,225 300,295 370,265" fill="#0b0b14" />
+  
+  <!-- Glowing Eye Cores -->
+  <circle cx="170" cy="255" r="18" fill="url(#eye-grad)" />
+  <circle cx="330" cy="255" r="18" fill="url(#eye-grad)" />
+
+  <!-- Nose Cavity -->
+  <polygon points="250,280 230,335 250,350 270,335" fill="#0b0b14" />
+
+  <!-- Teeth / Jaw Cuts -->
+  <rect x="190" y="395" width="22" height="40" rx="4" fill="#0b0b14" />
+  <rect x="222" y="395" width="22" height="40" rx="4" fill="#0b0b14" />
+  <rect x="256" y="395" width="22" height="40" rx="4" fill="#0b0b14" />
+  <rect x="288" y="395" width="22" height="40" rx="4" fill="#0b0b14" />
+
+  <!-- Temple Tech Accents -->
+  <rect x="100" y="270" width="30" height="8" rx="2" fill="#00f0ff" />
+  <rect x="370" y="270" width="30" height="8" rx="2" fill="#ff007f" />
+</svg>
