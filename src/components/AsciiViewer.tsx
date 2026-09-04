@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import dynamic from "next/dynamic";
 import {
   Play,
@@ -33,7 +33,15 @@ export function AsciiViewer({
 }: AsciiViewerProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [prevSrc, setPrevSrc] = useState(options.src);
   const instanceRef = useRef<AsciiObjectInstance | null>(null);
+
+  // Synchronize load state with prop change during render
+  if (options.src !== prevSrc) {
+    setPrevSrc(options.src);
+    setIsLoading(true);
+    setLoadError(null);
+  }
 
   const optionsWithCallbacks: AsciiObjectOptions = {
     ...options,
@@ -49,11 +57,6 @@ export function AsciiViewer({
     },
   };
 
-  useEffect(() => {
-    setIsLoading(true);
-    setLoadError(null);
-  }, [options.src]);
-
   return (
     <div className="relative w-full h-full min-h-0 flex-1 flex items-center justify-center overflow-hidden rounded-[12px] bg-black select-none shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_2px_4px_rgba(0,0,0,0.04)]">
       {/* Top Left Vercel Status Tag */}
@@ -63,7 +66,7 @@ export function AsciiViewer({
           <div className="size-2.5 rounded-full bg-[#6CDA75]" />
           <span>3D Viewport</span>
           <span className="text-[#8F8F8F]">·</span>
-          <span className="font-mono text-[#EBEBEB]">Cell {options.cellSize ?? 10}px</span>
+          <span className="font-mono text-[#EBEBEB]">{activeTitle}</span>
         </div>
       </div>
 

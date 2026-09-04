@@ -138,9 +138,13 @@ export function UploadZone({
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <h2 className="text-xs font-medium text-[#171717] tracking-[-0.28px]">
-            Sample Presets
+            Presets
           </h2>
-          <span className="text-[11px] text-[#8F8F8F]">1-click test</span>
+          {currentTitle ? (
+            <span className="text-[11px] text-[#8F8F8F] font-mono truncate max-w-[140px]" title={currentTitle}>
+              {currentTitle}
+            </span>
+          ) : null}
         </div>
 
         <div className="grid grid-cols-2 gap-2">
